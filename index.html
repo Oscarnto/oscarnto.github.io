@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>Oscar Nieto</h1>
-            <p>Data Engineer | Problem Solver | Tech Enthusiast</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -21,29 +20,60 @@
         </div>
     </header>
 
-    <section id="about">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Data Engineer with experience and knowledge in query and programming languages such as SQL and Python, experience and certifications in handling and creating ETL processes in Azure. 
-               I also have experience in Big Data technologies such as PySpark in Databricks for processing and analyzing large volumes of data. I have experience in handling and controlling errors in production processes, 
-               as well as knowledge in data modeling and CRM segmentation.</p>
+            <h1 class="highlighted-name">Oscar Nieto</h1>
+            <p>Data Engineer | Problem Solver | Tech Enthusiast</p>
+            <p>Empowering Insights through Data</p>
         </div>
     </section>
 
+    <!-- ETL Section -->
+    <section id="etl">
+        <div class="container">
+            <div class="etl-steps">
+                <div class="etl-step">
+                    <h3>Extract</h3>
+                    <p>Gather data from diverse sources such as APIs, databases, and flat files, ensuring accuracy and completeness.</p>
+                </div>
+                <div class="etl-step">
+                    <h3>Transform</h3>
+                    <p>Clean, normalize, and structure the data to make it meaningful and ready for analysis, using tools like Python and Databricks.</p>
+                </div>
+                <div class="etl-step">
+                    <h3>Load</h3>
+                    <p>Efficiently store the transformed data in Data Warehouses or Data Lakes, such as Azure Synapse or Snowflake, for scalability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Data Engineer with experience and knowledge in query and programming languages such as SQL and Python, with certifications in creating ETL processes in Azure. 
+               Proficient in Big Data technologies like PySpark in Databricks for processing and analyzing large volumes of data. Skilled in managing production errors, data modeling, and CRM segmentation.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Data Pipeline Optimization</h3>
-                <p>Improved data processing time by 30% using Azure Data Factory and Databricks.</p>
+                <h3>Project 1</h3>
+                <p>Description of Project 1 goes here.</p>
             </div>
             <div class="project">
-                <h3>GitHub Automation</h3>
-                <p>Automated repository management tasks with custom GitHub Actions scripts.</p>
+                <h3>Project 2</h3>
+                <p>Description of Project 2 goes here.</p>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -59,9 +89,10 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Oscar Nieto. All rights reserved.</p>
+            <p>&copy; 2024 Oscar Nieto.</p>
         </div>
     </footer>
     <script src="script.js"></script>
