@@ -1,10 +1,11 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #fff;
 }
 
 .container {
@@ -14,15 +15,13 @@ body {
     max-width: 1200px;
 }
 
+/* Header */
 header {
-    background: #4CB9E4;
-    color: #4CB9E4;
-    padding: 1rem 0;
+    background: #1abc9c; /* Turquesa */
+    color: #ffffff;
+    padding: 0.5rem 0; /* Delgado */
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
+    font-size: 1rem;
 }
 
 header nav ul {
@@ -30,6 +29,7 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 header nav ul li {
@@ -37,51 +37,202 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-section {
-    padding: 2rem 0;
+header nav ul li a:hover {
+    color: #16a085; /* Color más claro al pasar el cursor */
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 4rem 0;
     text-align: center;
 }
 
-.project {
-    margin-bottom: 1.5rem;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #1abc9c;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* ETL Section */
+#etl {
+    background-color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#etl h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.etl-steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.etl-step {
+    flex: 1 1 calc(33.333% - 2rem);
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
     text-align: left;
 }
 
-form label {
+.etl-step h3 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+}
+
+.etl-step p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Projects Section */
+#projects {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.project {
+    background: #fff;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project h3 {
+    font-size: 1.3rem;
+    color: #1abc9c;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#contact-form label {
     display: block;
-    margin: 0.5rem 0 0.2rem;
+    margin: 1rem 0 0.5rem;
+    font-size: 1rem;
+    color: #333;
 }
 
-form input,
-form textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8f8f8;
 }
 
-form button {
-    background: #333;
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #1abc9c;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1abc9c;
     color: #fff;
+    font-size: 1.2rem;
     border: none;
-    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#contact-form button:hover {
+    background-color: #16a085;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }
