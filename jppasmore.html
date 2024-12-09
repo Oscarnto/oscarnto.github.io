@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Manifest Upload System for JP Pasmore</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your styles.css file -->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1>Automated Manifest Upload System for JP Pasmore</h1>
+            <p>This project involved the implementation of an automated manifest upload system for JP Pasmore warehouse. The warehouse previously relied on a manual process where printed manifests were used to log the incoming items each week. The new system automates this process, enhancing efficiency and accuracy.</p>
+
+            <h2>Project Overview</h2>
+            <p>The goal of this project was to replace the manual entry system with an automated workflow that uses Optical Character Recognition (OCR) to convert printed manifests into digital data. The OCR technology extracts the information from the printed manifests, which is then converted into a CSV file. Using SQL Server and Snowflake architecture, the CSV file is processed and uploaded into a centralized database.</p>
+
+            <h2>Key Technologies Used</h2>
+            <ul>
+                <li>Optical Character Recognition (OCR) for converting printed manifests into digital data.</li>
+                <li>SQL Server for storing and managing the data in a structured format.</li>
+                <li>Snowflake architecture for designing an optimized and scalable database solution.</li>
+                <li>Stored Procedures for automating the data insertion process into the database.</li>
+            </ul>
+
+            <h2>System Architecture</h2>
+            <p>The system architecture includes various components working together to streamline the data flow from OCR to the SQL Server database. The OCR engine processes the printed manifests, while the Snowflake database architecture ensures efficient data storage and retrieval for future analysis.</p>
+
+            <h2>Challenges & Solutions</h2>
+            <p>One of the main challenges was ensuring the accuracy of OCR technology, particularly with handwritten or poorly printed manifests. To address this, we implemented data validation checks during the conversion process to minimize errors and ensure the integrity of the data.</p>
+
+            <p>Another challenge was integrating the new system with the existing warehouse management processes. This was solved by designing a user-friendly interface and providing training to the warehouse staff, enabling them to transition smoothly to the new automated system.</p>
+
+            <h2>Outcome</h2>
+            <p>The new system not only reduced human error and labor costs but also improved data accessibility, enabling faster and more accurate decision-making. The warehouse staff now has easy access to the data, which can be used for analysis and reporting. This has significantly enhanced operational efficiency and data-driven insights for JP Pasmore.</p>
+
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Oscar Nieto.</p>
+    </footer>
+
+</body>
+</html>
