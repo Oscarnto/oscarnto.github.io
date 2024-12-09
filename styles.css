@@ -132,7 +132,7 @@ header nav ul li a:hover {
 }
 
 .about-photo img {
-    width: 150px; /* Ancho ajustado para que sea proporcional */
+    width: 80px; /* Ancho ajustado para que sea proporcional */
     height: auto; /* Mantiene las proporciones */
     border-radius: 50%; /* Hace que la imagen sea circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elegante */
